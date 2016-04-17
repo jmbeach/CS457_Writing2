@@ -81,6 +81,24 @@ storage engine that puts the safety of your data first."
  Was it convenient? 
 Did it solve some of the limitations/disadvantages of SQL DBs? 
 Did using a NoSQL DB introduce new limitations/disadvantages?
+	+ MongDB
+		+ Describe experience
+			+ Enjoy the logical format of queries
+		+ Describe conveniences
+			+ Never have to leave javascript code if developing for web
+		+ Advantages over SQL
+			+ Integrating it into an app
+				+ No ugly query strings
+				+ Format of data can change without significantly restructuring code
+				+ Aggregation is more straight forward
+		+ Disadvantages over SQL
+			+ No schema = no errors (All NoSQL dbs share this)
+			+ Use in code is going to require a lot of data-integrity checks
+	+ CouchDB
+		+ Describe experience
+		+ Describe conveniences
+		+ Advantages over SQL
+		+ Disadvantages over SQL
 1. Based on your experiences using each NoSQL DB, describe how they differ from
 	 each other.  Identify some categories for comparison.
 1. Based on your experiences using each NoSQL DB, describe some of the
@@ -109,8 +127,7 @@ TechRepublic." *TechRepublic*. 26 Aug. 2010. Web. 17 Apr. 2016.
 + "The MongoDB 3.2 Manual." *The MongoDB 3.2 Manual — MongoDB Manual 3.2*. Web.
   17 Apr. 2016.
 <https://docs.mongodb.org/manual/?_ga=1.3950576.1786411152.1460915581>.
-+ 
-Kovacs, Kristof. "Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs
++ Kovacs, Kristof. "Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs
 Couchbase vs OrientDB vs Aerospike vs Neo4j vs Hypertable vs ElasticSearch vs
 Accumulo vs VoltDB vs Scalaris vs RethinkDB Comparison." *Cassandra vs MongoDB
 vs CouchDB vs Redis vs Riak vs HBase vs Couchbase vs Hypertable vs
