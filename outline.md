@@ -96,13 +96,37 @@ Did using a NoSQL DB introduce new limitations/disadvantages?
 			+ Use in code is going to require a lot of data-integrity checks
 	+ CouchDB
 		+ Describe experience
+			+ Perfect for websites which want extremely minimal backend logic
 		+ Describe conveniences
+			+ Similar to MongoDB, you can write your whole app in pure javascript.
+				+ Difference is that the app written in couchdb can be completely client-side
 		+ Advantages over SQL
+			+ You can modify a query without ever touching your code because of views
 		+ Disadvantages over SQL
+			+ Potentially introducing a problem by relying on views. How do you test a change to a view?
 1. Based on your experiences using each NoSQL DB, describe how they differ from
 	 each other.  Identify some categories for comparison.
+	+ Programmability
+		+ CouchDB
+			+ Program a view
+				+ can't call it without http request or fouton
+			
+	+ Ease of Use
+		+ MongoDB CLI vs CouchDB fouton 
+			+ I'll sleep on the floor, thanks
+	+ Speed
+		+ getting something running / deploying a change
+		+ Creating a new database
+	+ Stability
+		+ CouchDB is mainly modified via curl requests from the command-line.
+			+ If you curl a drop or delete request and accidently hit enter, 
+			You're going to get 'OK' back and that's it
+		+ Even though MongoDB is slower-paced, it gives you the comfort of 
+		being able to write query files and take your time.
 1. Based on your experiences using each NoSQL DB, describe some of the
 	 advantages and disadvantages/limitations to each NoSQL DB.
+	+ Advantages
+		+ CouchDB
 1. Include a few screen shots of your results from running NoSQL DB2 - I need
 	 to see that you actually did it
 1. In a conclusion, give your opinion of each NoSQL DB and your recommendation
